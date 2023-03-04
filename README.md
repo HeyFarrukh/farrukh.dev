@@ -1,0 +1,29 @@
+My Personal Website
+
+[![Website](https://img.shields.io/badge/Website-farrukh.dev-blue)](https://farrukh.dev/)
+[![GitHub stars](https://img.shields.io/github/stars/itsgamerxyz/farrukh.dev.svg)](https://github.com/itsgamerxyz/farrukh.dev)
+[![GitHub issues](https://img.shields.io/github/issues/itsgamerxyz/farrukh.dev.svg)](https://github.com/itsgamerxyz/farrukh.dev/issues)
+
+
+This is my personal website where I showcase my projects and share my thoughts on various topics.
+
+Features
+List any notable features of your website here.
+Technologies Used
+HTML
+Screenshots
+If applicable, add screenshots of your website to give visitors a better idea of what it looks like.
+
+Usage
+To view my website, simply open a web browser and navigate to farrukh.dev. From there, you can explore my projects, blog posts, and other content.
+
+Contributing
+I'm not currently accepting contributions for my personal website, but feel free to reach out to me with any suggestions or feedback.
+
+License
+Distributed under the MIT License. See LICENSE for more information.
+
+Contact
+Farrukh - @itsgamerxyz - contact@farrukh.dev
+
+Project Link: https://github.com/itsgamerxyz/farrukh.dev
