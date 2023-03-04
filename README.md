@@ -1,8 +1,10 @@
 My Personal Website
 
 [![Website](https://img.shields.io/badge/Website-farrukh.dev-blue)](https://farrukh.dev/)
-[![GitHub stars](https://img.shields.io/github/stars/itsgamerxyz/farrukh.dev.svg)](https://github.com/itsgamerxyz/farrukh.dev)
+[![GitHub stars](https://img.shields.io/github/stars/itsgamerxyz/farrukh.dev.svg?style=social)](https://github.com/itsgamerxyz/farrukh.dev/stargazers)
 [![GitHub issues](https://img.shields.io/github/issues/itsgamerxyz/farrukh.dev.svg)](https://github.com/itsgamerxyz/farrukh.dev/issues)
+
+
 
 
 This is my personal website where I showcase my projects and share my thoughts on various topics.
