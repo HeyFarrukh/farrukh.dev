@@ -10,6 +10,9 @@
     <a href="https://github.com/itsgamerxyz/farrukh.dev/issues" target="_blank">
       <img alt="GitHub issues" src="https://img.shields.io/github/issues/itsgamerxyz/farrukh.dev.svg?style=for-the-badge">
     </a>
+    <a href="https://farrukh.dev" target="_blank">
+      <img alt="Website Status" src="https://img.shields.io/website-up-down-green-red/https/farrukh.dev.svg?style=for-the-badge">
+    </a>
   </p>
   <br>
   <p>This is my personal website where I showcase my projects and share my thoughts on various topics.</p>
