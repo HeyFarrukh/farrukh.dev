@@ -8043,13 +8043,13 @@
         color: "#FFFFFF",
         opacity: 1.00,
         manifest: [
-            {src:"/public/assets/NS/map.png?1675881080920", id:"map"},
-            {src:"/public/assets/NS/Neotoric Stadium_atlas_1.png?1675881080570", id:"Neotoric Stadium_atlas_1"},
-            {src:"/public/assets/NS/Neotoric Stadium_atlas_2.png?1675881080570", id:"Neotoric Stadium_atlas_2"},
-            {src:"/public/assets/NS/Neotoric Stadium_atlas_3.png?1675881080570", id:"Neotoric Stadium_atlas_3"},
-            {src:"/public/assets/NS/Neotoric Stadium_atlas_4.png?1675881080571", id:"Neotoric Stadium_atlas_4"},
-            {src:"/public/assets/NS/Neotoric Stadium_atlas_5.png?1675881080572", id:"Neotoric Stadium_atlas_5"},
-            {src:"/public/assets/NS/Neotoric Stadium_atlas_6.png?1675881080575", id:"Neotoric Stadium_atlas_6"}
+            {src:"/assets/NS/map.png?1675881080920", id:"map"},
+            {src:"/assets/NS/Neotoric Stadium_atlas_1.png?1675881080570", id:"Neotoric Stadium_atlas_1"},
+            {src:"/assets/NS/Neotoric Stadium_atlas_2.png?1675881080570", id:"Neotoric Stadium_atlas_2"},
+            {src:"/assets/NS/Neotoric Stadium_atlas_3.png?1675881080570", id:"Neotoric Stadium_atlas_3"},
+            {src:"/assets/NS/Neotoric Stadium_atlas_4.png?1675881080571", id:"Neotoric Stadium_atlas_4"},
+            {src:"/assets/NS/Neotoric Stadium_atlas_5.png?1675881080572", id:"Neotoric Stadium_atlas_5"},
+            {src:"/assets/NS/Neotoric Stadium_atlas_6.png?1675881080575", id:"Neotoric Stadium_atlas_6"}
         ],
         preloads: []
     };
