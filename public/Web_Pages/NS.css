@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@800&display=swap');
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+body
+{
+    background: rgb(0,0,0);
+    background: #272627;
+    height: 100vh;
+}
+#container
+{
+    position: absolute;
+    top: 18.6%;
+    left: 25%;
+
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background:url('..'), #44546a79;
+    box-shadow: 0 0px 30px #4473c4b9;
+}
+
+#container .content
+{
+    max-width: 600px;
+    text-align: center
+}
+#container .content h2
+{
+   font-size: 18vw; 
+   color: #fff;
+   line-height: 1em;
+}
+#container .content h4
+{
+    position: relative;
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    color: #111;
+    background: #fff;
+    font-weight: 300;
+    padding: 10px 20px;
+    display: inline-block;
+}
+#container .content p
+{
+    color: #fff;
+    font-size: 1.2em;
+}
+#container .content a
+{
+    position: relative;
+    display: inline-block;
+    padding: 10px 25px;
+    background: #2b9e31;
+    color: #fff;
+    text-decoration: none;
+    top:10cm;
+    margin-top: 25px;
+    border-radius: 25px;
+    border-bottom: 4px solid #4bd00d;
+
+}
+
+.emboss-txt {
+    position: relative;
+    font-size: 18px;
+    letter-spacing: 0px;
+    color:rgb(207,207,207);
+    text-shadow: 
+  /*3D layers*/
+  0px 0px 1px rgb(41, 99, 25),
+  0px 1px 1px rgb(41, 99, 25),
+  0px 2px 1px rgb(41, 99, 25),
+  1px 1px 1px rgb(41, 99, 25),
+  1px 2px 1px rgb(41, 99, 25),
+  1px 3px 1px rgb(41, 99, 25),
+  2px 2px 1px rgb(41, 99, 25),
+  2px 3px 1px rgb(41, 99, 25),
+  2px 4px 1px rgb(41, 99, 25);
+
+  /*long soft bottom*/
+1px 10px 30px rgba(0,0,0,0.8),
+1px 10px 70px rgba(0,0,0,0.8),
+/*short soft bottom*/
+0px 5px 5px rgba(0,0,0,0.8),
+/*left shadow*/
+-5px 5px 20px rgba(0,0,0,0.8),
+/*right shadow*/
+5px 5px 20px rgba(0,0,0,0.8);
+  }
+
+h1 {
+    -webkit-animation: color-change 1s infinite;
+    -moz-animation: color-change 1s infinite;
+    -o-animation: color-change 1s infinite;
+    -ms-animation: color-change 1s infinite;
+    animation: color-change 1s infinite;
+}
+
+@-webkit-keyframes color-change {
+    0% { color: rgb(43, 255, 0); }
+    50% { color: rgba(21, 255, 0, 0.644); }
+    100% { color: rgb(46, 141, 51); }
+}
+@-moz-keyframes color-change {
+    0% { color: rgb(43, 255, 0); }
+    50% { color: rgba(21, 255, 0, 0.644); }
+    100% { color: rgb(46, 141, 51); }
+}
+@-ms-keyframes color-change {
+    0% { color: rgb(43, 255, 0); }
+    50% { color: rgba(21, 255, 0, 0.644); }
+    100% { color: rgb(46, 141, 51); }
+}
+@-o-keyframes color-change {
+    0% { color: rgb(43, 255, 0); }
+    50% { color: rgba(21, 255, 0, 0.644); }
+    100% { color: rgb(46, 141, 51); }
+}
+@keyframes color-change {
+    0% { color: rgb(43, 255, 0); }
+    50% { color: rgba(21, 255, 0, 0.644); }
+    100% { color: rgb(46, 141, 51); }
+}
