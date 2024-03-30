@@ -12,6 +12,10 @@
         "destination": "/Web_Pages/NS/NS.html"
       },
       {
+        "source": "/foodfall",
+        "destination": "/foodfall.html"
+      },
+      {
         "source": "/ns",
         "destination": "/Web_Pages/NS/NS.html"
       }
