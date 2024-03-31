@@ -29,7 +29,7 @@
 ## Screenshots
 
 <p align="center">
-  <a href="https://imgur.com/"><img src="https://i.imgur.com/bKCEcKm.png" alt="bKCEcKm.png" border="0" width="800" height="800"></a>
+  <a href="https://imgur.com/"><img src="https://i.imgur.com/bKCEcKm.png" alt="bKCEcKm.png" border="0" width="500" height="500"></a>
 </p>
 
 
