@@ -23,6 +23,7 @@
       <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
       <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
       <link rel="manifest" href="/favicon/site.webmanifest">
+      <link rel="stylesheet" href="index.css">
       <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-app.js"></script>
       <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-analytics.js"></script>
       <script>
@@ -57,80 +58,37 @@
          
          gtag('config', 'G-6YYEYWR4K8');
       </script>
-      <style>
-         body {
-         background-color: #1c1c1e;
-         color: #fff;
-         font-size: 24px;
-         font-family: sans-serif;
-         text-align: center;
-         margin: 0;
-         padding: 0;
-         }
-         h1 {
-         font-size: 48px;
-         margin-top: 100px;
-         }
-         p {
-         font-size: 28px;
-         margin-top: 30px;
-         }
-         /* Media queries for smaller screens */
-         @media screen and (max-width: 768px) {
-         h1 {
-         font-size: 46px;
-         margin-top: 60px;
-         }
-         p {
-         font-size: 25px;
-         margin-top: 10px;
-         }
-         }
-         @media screen and (max-width: 480px) {
-         h1 {
-         font-size: 40px;
-         margin-top: 40px;
-         }
-         p {
-         font-size: 20px;
-         margin-top: 20px;
-         }
-         }
-      </style>
    </head>
+   <style>
+h1 {
+    text-align: center; /* Center-align the text horizontally */
+    position: absolute; /* Position the element */
+    top: 25%; /* Move the element 50% down from the top */
+    left: 50%; /* Move the element 50% from the left */
+    transform: translate(-50%, -50%); /* Center the element both horizontally and vertically */
+    font-size: 10vw; /* Set the font size */
+}
+
+@media screen and (max-width: 768px) {
+    h1 {
+        font-size: 20vw;
+        bottom: 15%;
+    }
+
+}
+
+@media screen and (max-width: 480px) {
+    h1 {
+        font-size: 25vw;
+		text-align: center;
+		bottom: 60%;
+    }
+
+}
+
+
+   </style>
    <body>
-      <h1>404 Page Not Found</h1>
-      <p id="message"></p>
-      <script>
-         // Randomly choose a message from the list
-           var messages = [
-           "My website is like a ghost town, you're lost and you can't find your way. - Not Farrukh",
-           "My website is like an old TV, it's showing nothing but static. - Not Farrukh",
-           "My website is like a black hole, it swallows everything that comes its way. - Not Farrukh",
-           "My website is like a lost dog, it's nowhere to be found. - Not Farrukh",
-           "My website is like a broken record, it keeps playing the same old song. - Not Farrukh",
-           "My website is like a wrong turn, you're lost and there's no way back. - Not Farrukh",
-           "My website is like a bad dream, you just want to wake up from it. - Not Farrukh",
-           "My website is like a desert island, you're stranded and there's no way out. - Not Farrukh",
-           "My website is like a dead end, there's nowhere to go from here. - Not Farrukh",
-           "My website is like a horror movie, you just want to scream and run away. - Not Farrukh",
-           "My website is like a puzzle with a missing piece, it just doesn't make sense. - Not Farrukh",
-           "My website is like a book with missing pages, you're left in the dark. - Not Farrukh",
-           "My website is like a train that has derailed, it's going nowhere fast. - Not Farrukh",
-           "My website is like a ship that has sunk, it's lost forever. - Not Farrukh",
-           "My website is like a computer virus, it's infected and it needs to be fixed. - Not Farrukh",
-           "My website is like a car with a flat tire, it's going nowhere. - Not Farrukh",
-           "My website is like a phone with no service, it's useless. - Not Farrukh",
-           "My website is like a broken clock, it's stuck in time. - Not Farrukh",
-           "My website is like a dead battery, it needs to be recharged. - Not Farrukh",
-           "My website is like a bad date, it's just not working out. - Not Farrukh",
-           "My website is like a broken heart, it's painful and it needs to be fixed. - Not Farrukh"
-           ];
-           var randomMessage = messages[Math.floor(Math.random() * messages.length)];
-         
-           // Update the message element with the chosen message
-           var messageElement = document.getElementById("message");
-           messageElement.textContent = randomMessage;
-      </script>
+      <h1>ERROR 404</h1>
    </body>
 </html>
