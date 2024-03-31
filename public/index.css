@@ -1,8 +1,45 @@
 @charset "UTF-8";
 @font-face {
-	font-family: "Mona Sans";
-	src: url(fonts/MonaSans-ExtraBoldItalic.woff2);
+    font-family: "Mona Sans";
+    src: url(fonts/MonaSans-Regular.woff2) format('woff2');
+    font-style: regular;
 }
+
+@font-face {
+    font-family: "Mona Sans";
+    src: url(fonts/MonaSans-ExtraBoldItalic.woff2) format('woff2');
+    font-style: italic;
+    font-weight: 800;
+}
+
+@font-face {
+    font-family: "Mona Sans";
+    src: url(fonts/MonaSans-Italic.woff2) format('woff2');
+    font-style: italic;
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "Mona Sans";
+    src: url(fonts/MonaSans-SemiBold.woff2) format('woff2');
+    font-style: regular;
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: "Mona Sans";
+    src: url(fonts/MonaSans-SemiBold.woff2) format('woff2');
+    font-style: regular;
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: "Mona Sans";
+    src: url(fonts/MonaSans-Medium.woff2) format('woff2');
+    font-style: regular;
+    font-weight: 500;
+}
+
  *, *:before, *:after {
 	 -webkit-box-sizing: inherit;
 	 -moz-box-sizing: inherit;
@@ -20,24 +57,68 @@
 	 cursor: default;
 	 color: #6AF961;
 	font-family: "Mona Sans";
-     background-color: #1c1c1e;
+     background-color: #0B3D3B;
 }
 
-h1 {
-    color: #6AF961;
-    text-align: center;
+
+h1 .first_part {
+    color: #ffffff;
+    text-align: left;
     font-family: "Mona Sans";
-    font-size: 8vw; 
     font-style: italic;
     font-weight: 800;
+    font-size: 7vw; 
     line-height: normal;
-    text-align: center;
     position: absolute;
-    bottom: 20%; 
+    top: 55%; /* Adjust as needed */
+    left: 0; /* Ensures first_part starts from the left edge */
 }
 
+h1 .second_part {
+    color: #ffffff;
+    text-align: left;
+    font-family: "Mona Sans";
+    font-style: italic;
+    font-weight: 400;
+    font-size: 7vw; 
+    line-height: normal;
+    position: absolute;
+    top:55%; /* Keep it aligned with first_part */
+    left:19%; /* Adjust to create space between first_part and second_part */
+}
+
+h2 .first_part {
+    color: #6AF961;
+    text-align: left;
+    font-family: "Mona Sans";
+    font-style: italic;
+    font-weight: 800;
+    font-size: 2vw; 
+    line-height: normal;
+    position: absolute;
+    top: 70%; /* Adjust as needed */
+    left: 16%; /* Ensures first_part starts from the left edge */
+}
+
+h2 .second_part {
+    color: #6AF961;
+    text-align: left;
+    font-family: "Mona Sans";
+    font-style: italic;
+    font-weight: 400;
+    font-size: 2vw; 
+    line-height: normal;
+    position: absolute;
+    top:70%; /* Keep it aligned with first_part */
+    left:30%; /* Adjust to create space between first_part and second_part */
+}
+
+
+
+
+
 strong {
-    color: #0B3D3B;
+    color: #6AF961;
     text-align: center;
     font-family: "Mona Sans";
     font-size: 1.3vw; 
@@ -45,7 +126,7 @@ strong {
     font-weight: 900;
     line-height: normal;
     position: absolute;
-    top: 0%; 
+    bottom: 0%; 
     right: 0.5%; 
 }
 
@@ -80,6 +161,20 @@ strong {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+}
+
+.lightning {
+    position: absolute;
+    top: 77%; /* Move the SVG down by 50% of the viewport height */
+    left: 80%; /* Move the SVG horizontally by 50% of the viewport width */
+    transform: translate(-50%, -50%); /* Center the SVG precisely */
+}
+
+.menu {
+    position: absolute;
+    top: 1%; /* Move the SVG down by 50% of the viewport height */
+    left: 1%;
+    z-index: 1;
 }
 
 svg{
