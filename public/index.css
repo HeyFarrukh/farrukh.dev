@@ -58,6 +58,7 @@
 	 color: #6AF961;
 	font-family: "Mona Sans";
      background-color: #0B3D3B;
+     overflow-x: hidden; 
 }
 
 
@@ -113,6 +114,27 @@ h2 .second_part {
     left:30%; /* Adjust to create space between first_part and second_part */
 }
 
+
+h3 {
+    color: #6AF961;
+    font-size: 5vw;
+    font-family: Mona Sans;
+    font-style: italic;
+    font-weight: 800;
+    word-wrap: break-word;
+    text-align: center;
+    position: absolute;
+    top: 95%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.aboutmeline {
+    position: absolute;
+    top: 116%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
 
 
 
@@ -170,6 +192,10 @@ strong {
     transform: translate(-50%, -50%); /* Center the SVG precisely */
 }
 
+.firstline {
+    width: 100%;
+}
+
 .menu {
     position: absolute;
     top: 1%; /* Move the SVG down by 50% of the viewport height */
@@ -177,6 +203,31 @@ strong {
     z-index: 1;
 }
 
+.menuText1 {
+    position: absolute;
+    top: 2.7%; /* Move the SVG down by 50% of the viewport height */
+    left: 1.9%;
+    z-index: 1;
+}
+
+.menuText2 {
+    position: absolute;
+    top: 2.7%; /* Move the SVG down by 50% of the viewport height */
+    left: 10.5%;
+    z-index: 1;
+}
+.menuText3 {
+    position: absolute;
+    top: 2.7%; /* Move the SVG down by 50% of the viewport height */
+    left: 23.2%;
+    z-index: 1;
+}
+.menuText4 {
+    position: absolute;
+    top: 2.7%; /* Move the SVG down by 50% of the viewport height */
+    left: 35.4%;
+    z-index: 1;
+}
 svg{
 	position: absolute;
 	bottom: 0;
