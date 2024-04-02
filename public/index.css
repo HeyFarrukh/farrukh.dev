@@ -136,8 +136,40 @@ p1 {
     font-weight: 600;
     font-size: 2vw;
     position: absolute;
-    top: 150%;
+    top: 140%;
+    left: 3%;
+    text-align: center;
 }
+
+#line1_compsci {
+    position: absolute;
+    bottom: -46%;
+    left: 5%;
+    scale: 75%;
+}
+
+#line2_passionate {
+    position: absolute;
+    bottom: -50.3%;
+    left: 21.6%;
+    scale: 75%;
+}
+
+#line3_impact {
+    position: absolute;
+    bottom: -59.7%;
+    left: 5%;
+    scale: 75%;
+}
+
+#line4_cl {
+    position: absolute;
+    bottom: -78.3%;
+    left: 12.3%;
+    scale: 75%;
+}
+
+
 
 
 /*Line Breaks for About me text*/
@@ -160,7 +192,6 @@ p1 {
     content: "\a";
     white-space: pre;
 }
-
 #line6::before{
     content: "\a";
     white-space: pre;
@@ -183,6 +214,28 @@ p1 {
 }
 
 
+#bg_box {
+    position: absolute;
+    top: 125%;
+    right: 5%;
+    color: #6AF961;
+    border: #6AF961 0.225em solid;
+    border-radius: 28px;
+    box-shadow: inset 0 0 0.9em 0 #6AF961, 0 0 0.9em 0 #6AF961;
+}
+
+#profile_pic {
+    position: absolute;
+    top: 125.5%;
+    right: 5%;
+}
+
+#bg_box_effect {
+    position: absolute;
+    top: 190%;
+    right: 4%;
+
+}
 
 
 strong {
@@ -194,7 +247,7 @@ strong {
     font-weight: 900;
     line-height: normal;
     position: absolute;
-    bottom: 0%; 
+    top: 200%; 
     right: 0.5%; 
 }
 
