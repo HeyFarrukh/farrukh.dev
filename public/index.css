@@ -129,6 +129,52 @@ h3 {
     transform: translateX(-50%);
 }
 
+p1 {
+    color: #fff;
+    font-family: Mona Sans;
+    font-style: regular;
+    font-weight: 600;
+    font-size: 2vw;
+    position: absolute;
+    top: 150%;
+}
+
+
+/*Line Breaks for About me text*/
+#line1::after{
+    content: "\a";
+}
+#line2::before{
+    content: "\a";
+    white-space: pre;
+}
+#line3::before{
+    content: "\a";
+    white-space: pre;
+}
+#line4::before{
+    content: "\a";
+    white-space: pre;
+}
+#line5::before{
+    content: "\a";
+    white-space: pre;
+}
+
+#line6::before{
+    content: "\a";
+    white-space: pre;
+}
+#line7::before{
+    content: "\a";
+    white-space: pre;
+}
+#line8::before{
+    content: "\a";
+    white-space: pre;
+}
+
+
 .aboutmeline {
     position: absolute;
     top: 116%;
