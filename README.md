@@ -44,7 +44,7 @@ I'm not currently accepting contributions for my personal website, but feel free
 
 ### Code
 
-Distributed under the MIT License. See `LICENSE` for more information.
+Distributed under the MIT License.
 
 ### Assets, Images, and Content
 
