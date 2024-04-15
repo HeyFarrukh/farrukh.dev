@@ -18,13 +18,11 @@
   <p>This is my personal website where I showcase my projects and share my thoughts on various topics.</p>
 </div>
 
-## Features
-
-- List any notable features of your website here.
-
 ## Technologies Used
 
 - HTML
+- CSS
+- JavaScript
 
 ## Screenshots
 
