@@ -18,13 +18,11 @@
   <p>This is my personal website where I showcase my projects and share my thoughts on various topics.</p>
 </div>
 
-## Features
-
-- List any notable features of your website here.
-
 ## Technologies Used
 
 - HTML
+- CSS
+- JavaScript
 
 ## Screenshots
 
@@ -36,7 +34,7 @@
 
 ## Usage
 
-To view my website, simply open a web browser and navigate to farrukh.dev. From there, you can explore my projects, blog posts, and other content.
+To view my website, simply open a web browser and navigate to farrukh.dev. From there, you can explore projects i have worked on. 
 
 ## Contributing
 
@@ -44,11 +42,19 @@ I'm not currently accepting contributions for my personal website, but feel free
 
 ## License
 
-Distributed under the MIT License. See `LICENSE` for more information.
+### Code
+
+Distributed under the MIT License.
+
+### Assets, Images, and Content
+
+All rights reserved. The assets, images, and content associated with this website (excluding code) are not licensed for use, modification, or distribution. No permission is granted for any personal or commercial use. All rights are reserved by the original author (Farrukh).
+
+For inquiries regarding the use of assets, images, and content, please contact the author at contact@farrukh.dev.
 
 ## Contact
 
-Farrukh - [@itsgamerxyz](https://twitter.com/itsgamerxyz) - contact@farrukh.dev
+Farrukh - [@YoFarrukh](https://twitter.com/YoFarrukh) - contact@farrukh.dev
 
 ## Project Link
 
