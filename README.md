@@ -54,7 +54,7 @@ For inquiries regarding the use of assets, images, and content, please contact t
 
 ## Contact
 
-Farrukh - [@YoFarrukh](https://twitter.com/YoFarrukh) - contact@farrukh.dev
+Farrukh - contact@farrukh.dev
 
 ## Project Link
 
