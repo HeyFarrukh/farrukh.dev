@@ -339,6 +339,39 @@ strong {
     left: 35.4%;
     z-index: 1;
 }
+
+
+@media only screen and (max-width: 1440px) {
+  .menuText1 {
+    left: 1.9%;
+}
+
+.menuText2 {
+    left: 13.4%;
+}
+.menuText3 {
+    left: 30.2%;
+}
+.menuText4 {
+    left: 46.4%;
+}
+}
+
+@media only screen and (max-width: 1280px) {
+  .menuText1 {
+    left: 2.3%;
+}
+
+.menuText2 {
+    left: 15%;
+}
+.menuText3 {
+    left: 34%;
+}
+.menuText4 {
+    left: 52.1%;
+}
+}
 svg{
 	position: absolute;
 	bottom: 0;
