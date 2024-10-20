@@ -342,7 +342,7 @@ strong {
 }
 
 
-/*@media only screen and (max-width: 1440px) {
+@media only screen and (max-width: 1440px) {
   .menuText1 {
     left: 1.9%;
 }
@@ -356,7 +356,7 @@ strong {
 .menuText4 {
     left: 46.4%;
 }
-} */
+} 
 
 /*
 @media only screen and (max-width: 1280px) {
