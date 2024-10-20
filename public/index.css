@@ -359,6 +359,29 @@ strong {
 } */
 
 /* for Laptops, tested on Lenovo */
+@media only screen and (max-width: 1280px) {
+  .menuText1 {
+    left: 2.3%;
+}
+
+.menuText2 {
+    left: 32%;
+}
+.menuText3 {
+    left: 44%;
+}
+.menuText4 {
+    left: 52.1%;
+}
+}
+svg {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: auto; /* Adjust the height as needed */
+    z-index: 0;
+    left: 0;
+}
 
 
 /* Project Section */
