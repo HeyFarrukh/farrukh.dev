@@ -245,6 +245,9 @@ h3 {
 
 }
 
+.mobile-alert {
+  display: none; /* Hide the h1 by default */
+}
 
 strong {
     color: #6AF961;
@@ -360,7 +363,24 @@ strong {
  }
 }
 
+@media only screen and (max-width: 430px) {
+      /* Hide everything else */
+      body * {
+        display: none; /* Hide all elements by default */
+    }
+    .mobile-alert {
+      display: block; /* Ensure the text is visible */
+      font-style: italic;
+      font-weight: 800;
 
+      text-align: center; /* Center the text */
+      position: absolute; /* Use absolute positioning */
+      top: 35%; /* Adjust this value to move the text up or down */
+      left: 50%; /* Center horizontally */
+      transform: translate(-50%, -50%); /* Center vertically */
+      padding: 0; /* Remove padding if necessary */
+  }
+}
 
 svg {
     position: absolute;
