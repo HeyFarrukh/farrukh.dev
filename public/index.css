@@ -342,39 +342,26 @@ strong {
 }
 
 
-/*@media only screen and (max-width: 1440px) {
-  .menuText1 {
-    left: 1.9%;
+@media only screen and (max-width: 1536px) {
+ .menuText1 {
+  left: 2%;
+ }
+
+ .menuText2 {
+  left: 12.6%;
+ }
+
+ .menuText3 {
+  left: 28.5%;
+ }
+
+ .menuText4 {
+  left: 44%;
+ }
 }
 
-.menuText2 {
-    left: 13.4%;
-}
-.menuText3 {
-    left: 30.2%;
-}
-.menuText4 {
-    left: 46.4%;
-}
-} */
 
-/* for Laptops, tested on Lenovo */
-@media only screen and (max-width: 1280px) {
-  .menuText1 {
-    left: 2.3%;
-}
 
-.menuText2 {
-    left: 35%;
-}
-.menuText3 {
-    left: 44%;
-}
-.menuText4 {
-    left: 62.1%;
-}
-
-}
 svg {
     position: absolute;
     top: 0;
