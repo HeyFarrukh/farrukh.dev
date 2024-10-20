@@ -361,19 +361,26 @@ strong {
 /* for Laptops, tested on Lenovo */
 @media only screen and (max-width: 1280px) {
   .menuText1 {
-    left: 2.3%;
+    left: 50%; /* Center the element */
+    transform: translateX(-458%); /* Adjust centering */
+  }
+
+  .menuText2 {
+    left: 50%; 
+    transform: translate(-210%); /* Adjust vertical spacing */
+  }
+
+  .menuText3 {
+    left: 50%;
+    transform: translate(-50%, 3em); /* Adjust vertical spacing */
+  }
+
+  .menuText4 {
+    left: 50%;
+    transform: translate(-50%, 4.5em); /* Adjust vertical spacing */
+  }
 }
 
-.menuText2 {
-    left: 15%;
-}
-.menuText3 {
-    left: 34%;
-}
-.menuText4 {
-    left: 52.1%;
-}
-}
 svg {
     position: absolute;
     top: 0;
