@@ -360,13 +360,6 @@ strong {
 
 /* for Laptops, tested on Lenovo */
 @media only screen and (max-width: 1280px) {
-  .menu {
-    position: absolute;
-    top: 1%; /* Move the SVG down by 50% of the viewport height */
-    left: 1%;
-    z-index: 1;
-}
-  
   .menuText1 {
     left: 2.3%;
 }
