@@ -248,7 +248,9 @@ h3 {
 .mobile-alert {
   display: none; /* Hide the h1 by default */
 }
-
+.mobile-alert-small {
+  display: none; /* Hide the h1 by default */
+}
 strong {
     color: #6AF961;
     text-align: center;
