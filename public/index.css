@@ -363,7 +363,7 @@ strong {
  }
 }
 
-@media only screen and (max-width: 430px) {
+@media only screen and (max-width: 1400px) {
       /* Hide everything else */
       body * {
         display: none; /* Hide all elements by default */
@@ -372,7 +372,7 @@ strong {
       display: block; /* Ensure the text is visible */
       font-style: italic;
       font-weight: 800;
-
+      font-size: 5rem;
       text-align: center; /* Center the text */
       position: absolute; /* Use absolute positioning */
       top: 35%; /* Adjust this value to move the text up or down */
@@ -380,8 +380,27 @@ strong {
       transform: translate(-50%, -50%); /* Center vertically */
       padding: 0; /* Remove padding if necessary */
   }
+  .mobile-alert-small {
+    display: block; /* Ensure the text is visible */
+    font-style: italic;
+    color: #FFF;
+    font-weight: 800;
+    font-size: 2rem;
+    text-align: center; /* Center the text */
+    position: absolute; /* Use absolute positioning */
+    top: 60%; /* Adjust this value to move the text up or down */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Center vertically */
+    padding: 0; /* Remove padding if necessary */
+}
 }
 
+@media only screen and (max-width: 849px) {
+  .mobile-alert-small {
+    top: 90%; /* Adjust this value to move the text up or down */
+    left: 50%; /* Center horizontally */
+}
+}
 svg {
     position: absolute;
     top: 0;
