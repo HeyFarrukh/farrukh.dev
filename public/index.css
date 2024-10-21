@@ -196,7 +196,7 @@ h3 {
 }
 
 #line1_compsci {
-  transform: translateY(-0.3em) translateX(2.1em); /* Apply both transforms together */
+  transform: translateY(-0.3em) translateX(2.8em); /* Apply both transforms together */
 }
 
 
