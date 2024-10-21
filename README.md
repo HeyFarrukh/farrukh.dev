@@ -27,7 +27,7 @@
 ## Screenshots
 
 <p align="center">
-  <a href="https://imgur.com/"><img src="https://i.imgur.com/bKCEcKm.png" alt="bKCEcKm.png" border="0"></a>
+  <img src="https://farrukh.dev/assets/meta/farrukh.dev-cover.png">
 </p>
 
 
