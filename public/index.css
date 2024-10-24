@@ -374,7 +374,7 @@ strong {
       display: block; /* Ensure the text is visible */
       font-style: italic;
       font-weight: 800;
-      font-size: 5rem;
+      font-size: 3rem;
       text-align: center; /* Center the text */
       position: absolute; /* Use absolute positioning */
       top: 35%; /* Adjust this value to move the text up or down */
@@ -386,11 +386,11 @@ strong {
     display: block; /* Ensure the text is visible */
     font-style: italic;
     color: #FFF;
-    font-weight: 800;
-    font-size: 2rem;
+    font-weight: 100;
+    font-size: 1.5rem;
     text-align: center; /* Center the text */
     position: absolute; /* Use absolute positioning */
-    top: 60%; /* Adjust this value to move the text up or down */
+    top: 70%; /* Adjust this value to move the text up or down */
     left: 50%; /* Center horizontally */
     transform: translate(-50%, -50%); /* Center vertically */
     padding: 0; /* Remove padding if necessary */
@@ -399,7 +399,7 @@ strong {
 
 @media only screen and (max-width: 849px) {
   .mobile-alert-small {
-    top: 90%; /* Adjust this value to move the text up or down */
+    top: 60%; /* Adjust this value to move the text up or down */
     left: 50%; /* Center horizontally */
 }
 }
