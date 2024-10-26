@@ -1,3 +1,43 @@
+@charset "UTF-8";
+@font-face {
+    font-family: "Mona Sans";
+    src: url(fonts/MonaSans-Regular.woff2) format('woff2');
+    font-weight: normal; /* Regular weight */
+}
+
+@font-face {
+    font-family: "Mona Sans";
+    src: url(fonts/MonaSans-ExtraBoldItalic.woff2) format('woff2');
+    font-style: italic;
+    font-weight: 800; /* Extra bold weight */
+}
+
+@font-face {
+    font-family: "Mona Sans";
+    src: url(fonts/MonaSans-Italic.woff2) format('woff2');
+    font-style: italic;
+    font-weight: 400; /* Normal weight for italic */
+}
+
+@font-face {
+    font-family: "Mona Sans";
+    src: url(fonts/MonaSans-SemiBold.woff2) format('woff2');
+    font-weight: 600; /* Semi-bold weight */
+}
+
+@font-face {
+    font-family: "Mona Sans";
+    src: url(fonts/MonaSans-Bold.woff2) format('woff2');
+    font-weight: 700; /* Bold weight */
+}
+
+@font-face {
+    font-family: "Mona Sans";
+    src: url(fonts/MonaSans-Medium.woff2) format('woff2');
+    font-weight: 500; /* Medium weight */
+}
+
+
 * {
   margin: 0;
   padding: 0;
