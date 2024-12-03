@@ -1,42 +1,28 @@
-@charset "UTF-8";
-@font-face {
-    font-family: "Mona Sans";
-    src: url(fonts/MonaSans-Regular.woff2) format('woff2');
-    font-weight: normal; /* Regular weight */
+:root {
+  --primary-50: #f0fdf4;
+  --primary-100: #dcfce7;
+  --primary-200: #bbf7d0;
+  --primary-300: #86efac;
+  --primary-400: #4ade80;
+  --primary-500: #22c55e;
+  --primary-600: #16a34a;
+  --primary-700: #15803d;
+  --primary-800: #166534;
+  --primary-900: #14532d;
+  --primary-950: #052e16;
+  
+  --forest-50: #f1f8f4;
+  --forest-100: #e0efe5;
+  --forest-200: #c4e0cd;
+  --forest-300: #94c5a4;
+  --forest-400: #5fa47a;
+  --forest-500: #3f855b;
+  --forest-600: #2f6b47;
+  --forest-700: #27563a;
+  --forest-800: #224631;
+  --forest-900: #1c3a29;
+  --forest-950: #0c1f15;
 }
-
-@font-face {
-    font-family: "Mona Sans";
-    src: url(fonts/MonaSans-ExtraBoldItalic.woff2) format('woff2');
-    font-style: italic;
-    font-weight: 800; /* Extra bold weight */
-}
-
-@font-face {
-    font-family: "Mona Sans";
-    src: url(fonts/MonaSans-Italic.woff2) format('woff2');
-    font-style: italic;
-    font-weight: 400; /* Normal weight for italic */
-}
-
-@font-face {
-    font-family: "Mona Sans";
-    src: url(fonts/MonaSans-SemiBold.woff2) format('woff2');
-    font-weight: 600; /* Semi-bold weight */
-}
-
-@font-face {
-    font-family: "Mona Sans";
-    src: url(fonts/MonaSans-Bold.woff2) format('woff2');
-    font-weight: 700; /* Bold weight */
-}
-
-@font-face {
-    font-family: "Mona Sans";
-    src: url(fonts/MonaSans-Medium.woff2) format('woff2');
-    font-weight: 500; /* Medium weight */
-}
-
 
 * {
   margin: 0;
@@ -44,73 +30,242 @@
   box-sizing: border-box;
 }
 
-html,
 body {
-  height: 100%;
-  width: 100%;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  background-color: var(--forest-950);
+  color: var(--forest-50);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   overflow: hidden;
 }
 
-body {
-  margin: 0;
-  min-height: 100vh;
-  background-color: #0b3d3b;
-  font-family: "Mona Sans";
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+.noise {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url("data:image/svg+xml,%3Csvg viewBox='0 0 400 400' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+  opacity: 0.05;
+  pointer-events: none;
+}
+
+.container {
+  text-align: center;
+  padding: 2rem;
+  position: relative;
+  z-index: 1;
+}
+
+.glitch-container {
+  margin-bottom: 2rem;
+}
+
+.glitch {
+  font-size: 8rem;
+  font-weight: bold;
+  position: relative;
+  text-shadow: 0.05em 0 0 var(--primary-500),
+              -0.025em -0.05em 0 var(--primary-300),
+              0.025em 0.05em 0 var(--primary-700);
+  animation: glitch 2s infinite;
+}
+
+.glitch::before,
+.glitch::after {
+  content: attr(data-text);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.glitch::before {
+  animation: glitch-effect 3s infinite;
+  clip-path: polygon(0 0, 100% 0, 100% 35%, 0 35%);
+  transform: translate(-0.04em, -0.03em);
+  opacity: 0.75;
+}
+
+.glitch::after {
+  animation: glitch-effect 2s infinite;
+  clip-path: polygon(0 65%, 100% 65%, 100% 100%, 0 100%);
+  transform: translate(0.04em, 0.03em);
+  opacity: 0.75;
+}
+
+@keyframes glitch {
+  0% { text-shadow: 0.05em 0 0 var(--primary-500), -0.025em -0.05em 0 var(--primary-300), 0.025em 0.05em 0 var(--primary-700); }
+  14% { text-shadow: 0.05em 0 0 var(--primary-500), -0.025em -0.05em 0 var(--primary-300), 0.025em 0.05em 0 var(--primary-700); }
+  15% { text-shadow: -0.05em -0.025em 0 var(--primary-500), 0.025em 0.025em 0 var(--primary-300), -0.05em -0.05em 0 var(--primary-700); }
+  49% { text-shadow: -0.05em -0.025em 0 var(--primary-500), 0.025em 0.025em 0 var(--primary-300), -0.05em -0.05em 0 var(--primary-700); }
+  50% { text-shadow: 0.025em 0.05em 0 var(--primary-500), 0.05em 0 0 var(--primary-300), 0 -0.05em 0 var(--primary-700); }
+  99% { text-shadow: 0.025em 0.05em 0 var(--primary-500), 0.05em 0 0 var(--primary-300), 0 -0.05em 0 var(--primary-700); }
+  100% { text-shadow: -0.025em 0 0 var(--primary-500), -0.025em -0.025em 0 var(--primary-300), -0.025em -0.05em 0 var(--primary-700); }
+}
+
+@keyframes glitch-effect {
+  0% { transform: translate(0); }
+  20% { transform: translate(-2px, 2px); }
+  40% { transform: translate(-2px, -2px); }
+  60% { transform: translate(2px, 2px); }
+  80% { transform: translate(2px, -2px); }
+  100% { transform: translate(0); }
+}
+
+.tree-container {
+  margin: 2rem 0;
+  perspective: 1000px;
+}
+
+.tree {
+  position: relative;
+  width: 60px;
+  height: 120px;
+  margin: 0 auto;
+  transform-style: preserve-3d;
+  animation: float 6s ease-in-out infinite;
+}
+
+.trunk {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 12px;
+  height: 40px;
+  background: var(--forest-700);
+  transform: translateX(-50%);
+  border-radius: 2px;
+}
+
+.branches {
+  position: absolute;
+  bottom: 30px;
+  left: 0;
+  width: 100%;
+  height: 80px;
+}
+
+.branches span {
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background: var(--forest-600);
+  transform-origin: left;
+}
+
+.branches span:nth-child(1) { transform: rotate(30deg); top: 20%; }
+.branches span:nth-child(2) { transform: rotate(-30deg); top: 50%; }
+.branches span:nth-child(3) { transform: rotate(15deg); top: 80%; }
+
+.leaves {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 60px;
+  background: var(--primary-600);
+  clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+  animation: sway 4s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0) rotate(0); }
+  50% { transform: translateY(-10px) rotate(2deg); }
+}
+
+@keyframes sway {
+  0%, 100% { transform: translateX(-50%) rotate(0); }
+  50% { transform: translateX(-50%) rotate(5deg); }
 }
 
 h1 {
-  color: #6af961;
-  font-style: italic;
-  font-weight: 800;
-  font-size: 10rem;
-  text-align: center;
-  transition: color 0.3s ease, text-decoration 0.3s ease;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: var(--forest-50);
 }
-h1:hover {
-  color: #ffffff; /* Change color on hover */
-}
+
 p {
-  color: white;
-  font-weight: 100;
-  text-align: center;
-  font-size: 1.2rem;
-  margin-top: 20px;
-  padding: 0 25%; /* Adjust padding for smaller screens */
+  font-size: 1.25rem;
+  color: var(--forest-300);
+  margin-bottom: 2rem;
 }
 
-footer {
-  fill: #6af961;
-  position: fixed;
-  top: 95%;
+.actions {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.button {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
   font-size: 1rem;
-  font-weight: 800;
-  width: 100%;
-  color: #0b3d3b;
-  background-color: #6af961;
-  text-align: center;
+  font-weight: 500;
+  text-decoration: none;
+  transition: all 0.2s;
+  border: none;
+  cursor: pointer;
 }
 
-footer a {
-  text-decoration: none; /* Remove underline */
-  color: inherit; /* Make the link inherit the footer text color */
-  transition: color 0.3s ease, text-decoration 0.3s ease; /* Smooth transition for color and underline */
+.button.primary {
+  background: var(--primary-600);
+  color: var(--forest-50);
 }
 
-/* Hover effect */
-footer a:hover {
-  text-decoration: underline; /* Add underline on hover */
-  color: #ffffff; /* Change color on hover */
+.button.primary:hover {
+  background: var(--primary-700);
+  transform: translateY(-2px);
 }
-@media only screen and (max-width: 590px) {
-  h1 {
-    font-size: 5rem;
+
+.button.secondary {
+  background: transparent;
+  border: 2px solid var(--forest-700);
+  color: var(--forest-300);
+}
+
+.button.secondary:hover {
+  background: var(--forest-900);
+  transform: translateY(-2px);
+}
+
+.button-icon {
+  width: 1.25rem;
+  height: 1.25rem;
+}
+
+.coordinates {
+  position: absolute;
+  bottom: 2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 2rem;
+  font-family: monospace;
+  color: var(--forest-500);
+  opacity: 0.7;
+}
+
+@media (max-width: 768px) {
+  .glitch {
+    font-size: 6rem;
   }
-  p {
-    font-size: 0.8rem;
-    padding: 0 15px; /* Adjust padding for smaller screens */
+
+  .actions {
+    flex-direction: column;
+  }
+
+  .coordinates {
+    flex-direction: column;
+    gap: 0.5rem;
+    text-align: center;
   }
 }
